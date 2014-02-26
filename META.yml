@@ -3,12 +3,7 @@ abstract: 'Redis query analyzer for counting, traffic stats by command'
 author:
   - 'HIROSE Masaaki <hirose31@gmail.com>'
 build_requires:
-  Devel::Cover: 0
-  Pod::Wordlist: 0
-  Test::Fixme: 0
-  Test::Kwalitee: 0
   Test::More: 0.88
-  Test::Spelling: 0.12
 configure_requires:
   Module::Build::Tiny: 0.030
 dynamic_config: 0
@@ -42,4 +37,4 @@ resources:
   bugtracker: https://github.com/hirose31/redis-traffic-stats/issues
   homepage: https://github.com/hirose31/redis-traffic-stats
   repository: https://github.com/hirose31/redis-traffic-stats.git
-version: 1.000
+version: 1.001

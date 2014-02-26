@@ -12,7 +12,7 @@ script/redis-traffic-stats
 t/00_compile.t
 t/Util.pm
 t/author-critic.t
-t/author-dependencies.t
+t/author-dependencies.t.disable
 t/author-pod-spell.t
 t/perlcriticrc
 t/release-fixme.t
