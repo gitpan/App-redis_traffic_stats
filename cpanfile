@@ -13,11 +13,15 @@ requires 'Getopt::Long';
 requires 'List::Util';
 requires 'Pod::Usage';
 
+requires 'Test::Fixme';
+requires 'Test::More';
+
 on configure => sub {
     requires 'Module::Build::Tiny', '0.030';
 };
 
 on develop => sub {
+    requires 'App::scan_prereqs_cpanfile', '0.09';
     requires 'Pod::Wordlist';
     requires 'Test::Fixme';
     requires 'Test::Kwalitee';
@@ -26,5 +30,7 @@ on develop => sub {
 
 on test => sub {
     requires 'Test::More', '0.88';
+    requires 'Pod::Wordlist';
+    requires 'Test::Kwalitee';
+    requires 'Test::Spelling', '0.12';
 };
-
